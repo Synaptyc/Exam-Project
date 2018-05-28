@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang=en-gb>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> CED Solomon </title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="../style/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$("#accordion").accordion({
+				collapsible: true
+			});
+		});
+
+	</script>
+
+
+</head>
+
+<body>
+
+	<div class="activities-wrapper">
+
+		<!-- Beginning of the header -->
+		<header class="header">
+
+			<!-- Special Buttons - Donante & Become a member -->
+			<div id="header-actions">
+				<div id="donate">
+					<a href="#"> <strong> DONATE </strong> </a>
+				</div>
+				<div id="member">
+					<a href="#"><strong>BECOME A MEMBER</strong> </a>
+				</div>
+			</div>
+
+			<!-- Logo & Hamburger menu container -->
+
+			<div id="logo">
+				<a href="../index.html"><img src="../images//icons/logosolomon.png" alt="logo"></a>
+			</div>
+
+			<!-- Menu Area -->
+			<div class="burger-menu" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+
+
+
+			<!-- Function to show/hide the menu and change the animation -->
+			<script>
+				function myFunction(y) {
+					var x = document.getElementById("menu-display");
+					if (x.style.display === "flex") {
+						x.style.display = "none"
+					} else {
+						x.style.display = "flex"
+					}
+					y.classList.toggle("change");
+				}
+
+			</script>
+
+			<!-- Here is the menu list for Mobile -->
+			<div class="menu-elements" id="menu-display">
+				<strong>MENU</strong><br>
+				<a href="../pages/activities.html" id="activity">Activity</a>
+				<a href="../pages/about_us.html" id="about_us">About Us</a>
+				<a href="#" id="team">Team</a>
+				<a href="#" id="partners"> Partners </a>
+				<a href="#footer-contact" id="contact">Contact</a>
+			</div>
+			<!-- Menu List for Tablet and Desktop Mode -->
+			<div class="menu-elements-desktop">
+				<a href="../pages/activities.html" id="activity">Activity</a>
+				<a href="../pages/about_us.html" id="about_us">About Us</a>
+				<a href="#" id="team">Team</a>
+				<a href="#" id="partners"> Partners </a>
+				<a href="#footer-contact" id="contact">Contact</a>
+			</div>
+		</header>
+		<!-- end of .header-->
+
+		<!-- start of the content -->
+
+		<div class="middle">
+			<div class="activities-container">
+
+				<div id="page-intro">
+
+					<div id="activity-header">
+						<h1> Activity </h1>
+					</div>
+
+					<div id="show-case">
+						<button id="show"> Show Options </button>
+					</div>
+
+				</div>
+
+
+				<!-- Script to Show and Hide the Menu for categories  -->
+				<script>
+					$(document).ready(function() {
+						$(document).ready(function() {
+							$("#showhide").hide();
+						});
+						$("#show").click(function() {
+							$("#showhide").show();
+						});
+						$("#hide").click(function() {
+							$("#showhide").hide();
+						});
+					});
+
+				</script>
+
+				<!-- Here starts the Accordion content with the close button-->
+
+				<div id="showhide">
+					<button id="hide">X</button>
+
+					<div id="accordion">
+						<h3> &#9660; European Projects</h3>
+						<div class="accordion-text">
+							<p>The organization focused on developing and implementing a wide range of projects on a European level.
+							</p>
+							<p>Each of our European projects has specific objectives and comes to fulfill the needs that youth signals, with support from the network partnerships from countries all over Europe.</p>
+
+							<p id="links"><a href="european_projects.html">See the projects </a></p>
+						</div>
+
+						<h3> &#9660; Personal Development Courses</h3>
+						<div class="accordion-text">
+							<p>The NGO tries constantly to research and to great the expectations of the youth.
+							</p>
+							<p>We organize regularly courses within the areas that are vital nowadays in the community: leadership, conflict management, entrepreneurship, healthy lifestyle, sports, etc.</p>
+						</div>
+
+						<h3> &#9660; Summer Camps</h3>
+						<div class="accordion-text">
+							<p>We made a tradition on organizing summer camps, because we believe in the natural desire of children to explore the world and we want to be part of it.
+							</p>
+							<p>Our volunteers will provide the access to activities which stimulate the powerful resources children already have, in a healthy environment. </p>
+						</div>
+
+						<h3> &#9660; Cultural Activities</h3>
+						<div class="accordion-text">
+							<p>There are a few initiatives in Romania for artistic and cultural education in general. But we believe that young artists and the future people within the cultural area need support and recognition from the society. </p>
+							<p> That is way, through our cultural events in art, history, literature, we want to stimulate the performance and to encourage youth of great value. </p>
+						</div>
+
+						<h3> &#9660; Team Building</h3>
+						<div class="accordion-text">
+							<p>Nothing in the world can go well without great communities. </p>
+							<p>. Communication, relationship, acquiring skills, getting out of the comfort zone, involvement in social life, meeting new people, understanding of diversity, team work- these are the matters we bring out for the youth, in our team buildings activities, in order to create better communities.</p>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+				<main class="activities-content">
+
+					<article class="activities-article">
+						<p class="mission">
+							Our project team has expertise in projects for young people from disadvantaged backgrounds and fewer opportunities such as:
+						</p>
+
+						<div class="types-of-disadvantages">
+							<p>
+								<span> - educational difficulties (ED): </span> young people with learning difficutlies: early school-leavers; low qualified adults
+							</p>
+
+							<p>
+								<span> - economic obstacles (EO): </span> people with a low standard of living, low income, dependence on social welfare system or homeless; young people in long-term unemployment or poverty
+							</p>
+
+							<p>
+								<span> - cultural differences (CD): </span> people belonging to a national or ethnic minority (roma);
+							</p>
+						</div>
+					</article>
+
+				</main>
+
+
+
+
+				<!-- .content -->
+			</div>
+			<!-- .container-->
+
+		</div>
+		<!-- .middle-->
+
+	</div>
+	<!-- .wrapper -->
+
+	<!-- Fotter start -->
+	<footer class="footer">
+		<!-- Contact -->
+		<div id="footer-contact">
+			<strong>Contact:</strong> <br>
+			<div id="contact-container">
+				<!-- Phones -->
+				<div id="phone">
+					<h4>Phone Number:</h4>
+					<div id="numbers"><a href="tel:+40726767648">+40726767648</a> <br>
+						<a href="tel:+40744320922">+40744320922</a> </div>
+				</div>
+				<!-- E-Mail and Physical Address -->
+				<p> E-Mail: <a href="mailto:danielcojocaru@centrul-solomon.ro">danielcojocaru@centrul-solomon.ro</a></p>
+				<p> Address: Bd. Valea Cetatii, Brasov, Romania</p>
+			</div>
+		</div>
+		<!-- Empty container for creating a line -->
+		<div id="line"></div>
+
+		<!-- Social Media Container -->
+		<div id="social-media">
+			<h2>SOCIAL</h2>
+			<!-- Facebook Link Icon -->
+			<div>
+				<a href="http://www.facebook.com"> <img src="../images/icons/facebook.png" alt="facebook_icon_logo"> </a>
+			</div>
+			<!-- Instagram Link Icon -->
+			<div>
+				<a href="http://www.instagram.com"> <img src="../images/icons/instagram.png" alt="instagram_icon_logo logo"> </a>
+			</div>
+			<!-- LinkedIn Link Icon-->
+			<div>
+				<a href="http://www.linkedin.com"> <img src="../images/icons/linkedin.png" alt="linkedin_icon_logo"> </a>
+			</div>
+		</div>
+		<!-- Copyrights Text-->
+		<div id="mark">
+			<small> Copyrights &copy; Solomon &#8226; 2018 </small>
+		</div>
+
+	</footer>
+	<!-- .footer -->
+</body>
+
+</html>
